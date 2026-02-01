@@ -17,6 +17,6 @@ git add $1
 
 git commit -m "$message"
 
-git push origin $branch
+git push origin $branch > /dev/null 2>&1
 
 echo "$1 successfully pushed to branch $branch"
