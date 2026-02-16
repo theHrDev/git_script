@@ -14,7 +14,7 @@ if command -v $package > /dev/null  2>&1; then
 	echo "git installed,proceeding to push"
 
 else
-	echo "$package has not been installed, installin..."
+	echo "$package has not been installed, installing..."
 	
         sudo dnf install $package -y >/dev/null 2>&1
 
